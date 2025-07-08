@@ -12,7 +12,7 @@ func TestGetAPIKey(t *testing.T) {
 		"Authorization":[]string{"ApiKey 1283e874874"},
 	}
 
-	expected := "1283e874874_"
+	expected := "1283e874874"
 	out, err := GetAPIKey(testHeader)
 	if err != nil {
 		t.Fatalf("could not access API key for header: %v", testHeader)
