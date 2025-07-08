@@ -7,9 +7,9 @@ import (
 )
 
 func TestGetAPIKey(t *testing.T) {
-	
+
 	testHeader := http.Header{
-		"Authorization":[]string{"ApiKey 1283e874874"},
+		"Authorization": []string{"ApiKey 1283e874874"},
 	}
 
 	expected := "1283e874874"
@@ -21,6 +21,5 @@ func TestGetAPIKey(t *testing.T) {
 	if !reflect.DeepEqual(expected, out) {
 		t.Fatalf("Error in test. Expected: %v, Got: %v.", expected, out)
 	}
-
 
 }
